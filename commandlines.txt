@@ -12,17 +12,18 @@ git init
 touch toto.txt
 git add toto.txt
 git status
-
 git commit
-# create repo on github
+
+# First create a repo on github website
+# "origin" is convention use real repo name
 git remote add origin git@github.com:lemaitreh/myproject.git
 git remote -v show
 git push origin master
 
+# new branch
 git checkout -b newbranch
 git branch
 git push origin newbranch
-
 
 # do a merge on github
 git pull origin master
